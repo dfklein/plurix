@@ -1,0 +1,40 @@
+<div class="container-fluid">
+    <section>
+        <div class="row">
+            <div class="col-sm-7 content-container gray-container top">
+                <div class="row">
+                    <h2>Tem um problema? Toca pro pai que a gente resolve.</h2>
+                </div>
+                <div class="row">
+                    <p>Pode ser lorem, pode ser ipsum, pode ser dolor, pode ser amet: traz qualquer problema que com a gente não tem tempo ruim.</p>
+                </div>
+                <div class="row button-row" *ngIf="!isDesktopView()">
+                    <button type="button" class="btn btn-primary contato-button blue" (click)="openContatoModal()">Preciso de vocês</button>
+                </div>
+            </div>
+            <div class="col-sm-5 content-container blue-container top">
+                <div class="row">
+                    <h2>Caiu no nosso papo e quer trabalhar aqui?</h2>
+                </div>
+                <div class="row">
+                    <p>Texto falando que valorizamos talentos vindos de áreas inesperadas porque acreditamos que cabeças diferentes controem melhor juntas.</p>
+                </div>
+                <div class="row button-row" *ngIf="!isDesktopView()">
+                    <button type="button" class="btn btn-primary contato-button yellow" (click)="openContatoModal()">Orra me contrata</button>
+                </div>
+            </div>
+        </div>
+        <div class="row" *ngIf="isDesktopView()">
+            <div class="col-sm-7 content-container gray-container">
+                <div class="row button-row">
+                    <button type="button" class="btn btn-primary contato-button blue" (click)="openContatoModal()">Preciso de vocês</button>
+                </div>
+            </div>
+            <div class="col-sm-5 content-container blue-container">
+                <div class="row button-row">
+                    <button type="button" class="btn btn-primary contato-button yellow" (click)="openContatoModal()">Orra me contrata</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>

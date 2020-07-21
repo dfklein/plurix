@@ -1,0 +1,49 @@
+.azul {
+    color:#6D34EF;
+}
+h3 {
+    font-weight: 700;
+    font-size: 22px;
+    margin:20px 0px;
+}
+ol {
+    padding:20px 0px;
+}
+ol li{
+    list-style-type: none;
+    padding: 20px 0px;
+}
+.card:first-of-type {
+    margin-left:1vw;
+    margin-right:1vw;
+}
+.card {
+    background-color: #F5F5F5;
+}
+.card-body {
+    height: 600px;
+    padding:0px;
+}
+.card-title {
+    padding:20px
+}
+.card-text {
+    padding:20px;
+}
+.footer-absolute {
+    width:95%;
+    position: absolute;
+    bottom: 20px;
+    width:100%;
+    padding:0px 10px;
+}
+.contato-button {
+    padding:5px;
+    width:100%;
+}
+
+@media(max-width: 1134px) {
+    .card {
+        min-width: 250px;
+    }
+}

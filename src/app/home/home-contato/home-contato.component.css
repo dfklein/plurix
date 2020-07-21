@@ -1,0 +1,26 @@
+.container-fluid {
+    background-image: linear-gradient(#A599FF, #6D34EF);
+    color: white;
+}
+
+h2 {
+    padding:10px 0px;
+    font-size: 20px;
+}
+
+@media (max-width: 991px) {
+    .row {
+        margin-top:20px;
+        margin-bottom:20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .content-container {
+        padding: 50px 140px;
+    }
+
+    .right-column-content {
+        padding: 0px 40px;
+    }
+}

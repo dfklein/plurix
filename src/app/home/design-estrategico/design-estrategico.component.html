@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <section>
+        <div [ngClass]="{'row' : isDesktopView()}">
+            <div [ngClass]="{'col-sm' : isDesktopView()}">
+                <div class="row content-container">
+                    <h1>Usamos o design estratégico para resolver desafios de forma humanizada</h1>
+                </div>
+                <div class="row" *ngIf="!isDesktopView()">
+                    <figure class="team-img-container">
+                        <img src="../../../assets/img/home/time-trabalhando.png" alt="O time da Plurix trabalhando loucamente em seu escritório" class="img-responsive team-img-style-mobile">
+                    </figure>
+                </div>
+                <div class="row content-container">
+                    <div class="col-sm">
+                        <div class="row"><p>Lorem ipsum dolor sit amen, morbi eget erat consectetur elit.</p></div>
+                        <div class="row"><a class="btn btn-link light-background" role="button" (click)="scrollToElementSolucoes()">Projetos</a></div>
+                    </div>
+                        <hr *ngIf="!isDesktopView()" class="generic-separator">
+                     <div class="col-sm">
+                        <div class="row"><p>Lorem ipsum dolor sit amen, morbi eget erat consectetur elit.</p></div>
+                        <div class="row"><a class="btn btn-link light-background" role="button" routerLink="/treinamentos">Treinamentos</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm center-block text-center" *ngIf="isDesktopView()">
+                <figure>
+                    <img src="../../../assets/img/home/time-trabalhando.png" alt="Time Plurix trabalhando em seu escritório" class="team-img-style-desktop">
+                </figure>
+            </div>
+        </div>
+    </section>
+</div>

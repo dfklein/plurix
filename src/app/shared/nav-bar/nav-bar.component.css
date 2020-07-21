@@ -1,0 +1,134 @@
+figure {
+    margin: 0px;
+}
+
+.bg-light {
+    background-color: white !important;
+}
+
+.navbar {
+    border-style: solid !important;
+    border-color: white !important;
+    border-bottom-color: #F5F5F5 !important;
+    margin-bottom: 0px !important;
+}
+
+.navbar-brand {
+    display: block;
+    float: none;
+}
+
+.navbar-brand>img {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.nav-link {
+    color: #333333 !important;
+    font-weight: 500;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 3px;
+    padding-right: 2px;
+    padding-left: 2px;
+    
+}
+
+.contato-button {
+    width: 175px;
+}
+
+.logo-plurix {
+    height: 50px;
+}
+
+@media (max-width: 991px) {
+    .navbar-toggler {
+        background-color: #CFED54;
+        color: #333333;
+    }
+
+    .navbar-toggler:active{
+        background-color:#CFED54;
+    }
+
+    .navbar-toggler:focus{
+        background-color:#CFED54;
+    }
+    
+    .navbar-toggler {
+        width: 50px !important;
+        height: 40px !important;
+    }
+
+    .nav-item:first-child {
+        margin-top: 50px;
+        
+    }
+    .nav-item {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nav-item > a {
+        font-size: x-large;
+        font-weight: 700;
+    }
+    .contato-button {
+        margin-top: 250px;
+        background-color: #CFED54 !important;
+        color: #333333;
+        width:100%
+    }
+
+}
+
+/* em tela cheia */
+@media (min-width: 992px) {
+    .navbar-toggler {
+        background-color: #6D34EF;
+    }
+    
+    .navbar-toggler:active{
+        background-color:#6D34EF;
+    }
+
+    .navbar-toggler:focus{
+        background-color:#6D34EF;
+    }
+
+    .nav-item {
+        margin-right: 45px;
+        padding-top: 20px;
+    }
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 2px;
+        padding-left: 2px;
+    }
+    .nav-link {
+        height:100% !important;
+    }
+    .nav-link-active {
+        font-weight: bold;
+        border-style: solid;
+        border-color: #CFED54;
+    }
+    .navbar {
+        height:95px;
+        padding: 16px 75px !important;
+        
+    }
+    
+    .navbar-collapse {
+        height:inherit !important;
+    }
+    .item-container {
+        height:inherit !important;
+        padding-top: 5px;
+
+    }
+    
+
+}

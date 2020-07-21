@@ -1,0 +1,29 @@
+.link-row-style {
+    margin: 0px 70px 30px 70px;
+    border-bottom:solid;
+    border-color: #F5F5F5;
+}
+
+.link-col-style {
+    padding: 20px 0px;
+}
+
+.link-style.active {
+    border-bottom:solid;
+    border-color: #CFED54;
+    padding:0px 20px 23px 20px;
+
+}
+
+@media(min-width:451px) and (max-width:991px) {
+    .link-row-style {
+        margin-top: 20px;
+    }
+
+}
+
+@media(max-width:450px) {
+    .link-row-style {
+        margin: 20px 30px 30px 30px;
+    }
+}

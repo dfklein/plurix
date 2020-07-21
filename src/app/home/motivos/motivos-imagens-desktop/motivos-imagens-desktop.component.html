@@ -1,0 +1,11 @@
+<div class="component-container row">
+    <div class="col-sm">
+        <h2>Ué, mas por que a Plurix e não uma outrazinha por aí?</h2>
+    </div>
+    <div class="col-sm text-center" *ngFor="let image of images">
+        <figure class="figure">
+            <img [src]="getSrcFromName(image.fileName)" alt="{{image.alt}}">
+            <figcaption class="figure-caption text-center">{{image.figcaption}}</figcaption>
+        </figure>
+    </div>
+</div>

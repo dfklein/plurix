@@ -1,0 +1,75 @@
+.img-column {
+    float: left;
+    width: 50%;
+    padding: 5px;
+    vertical-align: bottom;
+}
+
+.img-column img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.metodos-component {
+    background-image: linear-gradient(#A599FF, #6D34EF);
+    color: white;
+}
+
+@media (max-width: 991px) {
+    .figure {
+        display: contents;
+    }
+
+    .figure img {
+        border: 0 none;
+        display: inline-block;
+        height: auto;
+        max-width: 47%;
+        vertical-align: bottom;
+        margin:auto;
+    }
+
+    .relative-container { 
+        padding: 30px 0px 50px 0px;
+        margin-bottom:70px;
+    }
+
+    p {
+        margin: 50px 0px;
+    }
+    .content-container {
+        padding: 20px 30px;
+    }
+    .img-overlay-responsive {
+        position: absolute;
+        bottom:-130px;
+        /* top: -87px; */
+    }
+}
+@media (min-width: 992px) {
+    h2 {
+        padding-right:300px;
+    }
+    p {
+        margin-bottom:60px;
+    }
+    .relative-container { 
+        position: relative; 
+        margin-bottom:350px; 
+        padding:0px 75px;
+    }
+    .paragraph-and-images-container {
+        position: absolute;
+        padding:0px 75px;
+        left: 0px;
+        top: 0%;
+    }
+    .paragraph-column {
+        padding-top: 116px;
+    }
+}

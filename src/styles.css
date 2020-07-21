@@ -1,0 +1,145 @@
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import 'assets/scss/modules/_fonts.scss';
+
+body {
+  font-family: 'Montserrat' !important;
+  margin-bottom: 150px;    
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+.separador-roxo {
+  margin: 2rem 7vw;
+  border-top-width:1px;
+  border-color:#A599FF;
+}
+@media (max-width: 574px) {
+  body {
+    margin-bottom: 450px;    
+  }
+}
+
+h1 {
+  font-weight: 700;
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 27px;
+}
+
+@media (max-width: 991px) {
+  h1 { font-size: 1.8rem; }
+  .content-container { padding: 20px; }
+
+}
+
+.carousel-indicators {
+  margin:0px auto;
+}
+.carousel-indicators li {
+  width : 10px!important;
+  height : 10px!important;
+  background-color: #707070;
+  border-radius: 50%;
+}
+.carousel-indicators .active {
+  background-color: #CFED54;
+}
+
+.carousel-control-next-icon{
+  display: none;
+}
+
+.carousel-control-prev-icon{
+  display: none;
+}
+
+.generic-separator {
+  border-top: 1px solid #F5F5F5;
+  margin:1rem 0rem;
+  width:100%;
+}
+
+/* *****************************************\
+   CONTROLE DE VISIBILIDADE X RESPONSIVIDADE
+\*******************************************/
+
+@media (min-width: 991px) {
+  .only-mobile-lg { display: none;}
+  .only-not-mobile-lg { display: block;}
+}
+@media (max-width: 575px) {
+  .only-mobile-sm { display: block;}
+  .only-not-mobile-sm { display: none;}
+}
+@media (min-width: 576px) {
+  .only-mobile-sm { display: none;}
+  .only-not-mobile-sm { display: block;}
+}
+@media (max-width: 767px) {
+  .only-mobile-md { display: block;}
+  .only-not-mobile-md { display: none;}
+}
+@media (min-width: 768px) {
+  .only-mobile-md { display: none;}
+  .only-not-mobile-md { display: block;}
+}
+@media (max-width: 1199px) {
+  .only-mobile-xl { display: block;}
+  .only-not-mobile-xl { display: none;}
+}
+@media (min-width: 1200px) {
+  .only-mobile-xl { display: none;}
+  .only-not-mobile-xl { display: block;}
+}
+
+/* *****************************\
+   CLASSES PARA BOTÕES E LINKS
+\*******************************/
+.btn-link {
+  font-weight: 700;
+}
+
+.btn-link.light-background {
+  color: #6D34EF;
+  padding: 0rem;
+  text-decoration: underline;
+}
+
+.btn-link.dark-background {
+  color: #CFED54;
+  padding: 0rem;
+  text-decoration: underline;
+}
+
+.contato-button {
+  border-radius: 200px;
+  padding:15px 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  height: auto;
+}
+.contato-button.blue {
+  border: none;
+  background-color: #6D34EF;
+}
+.contato-button.blue:active{
+  background-color: #6D34EF;
+}
+.contato-button.blue:focus {
+  background-color: #6D34EF;
+}
+.contato-button.yellow {
+  border-color: #CFED54;
+  background-color: #CFED54 !important;
+  color: #333333;
+}
+.contato-button.yellow:active{
+  background-color: #CFED54;
+}
+.contato-button.yellow:focus {
+  background-color: #CFED54;
+}

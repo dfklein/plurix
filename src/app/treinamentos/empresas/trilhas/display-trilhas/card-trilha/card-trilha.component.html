@@ -1,0 +1,17 @@
+<div class="card">
+    <div class="card-body">
+        <h3 class="card-title" [ngClass]="{'azul' : tituloAzul}">{{titulo}}</h3>
+        <div class="card-text">
+            <p>{{conteudo}}</p>
+            <ol *ngIf="modulos">
+                <li *ngFor="let modulo of modulos">{{modulo}}</li>
+            </ol>
+        </div>
+        <footer class="footer-absolute text-center">
+            <a *ngIf="linkHref" href="{{linkHref}}">{{link}}</a>
+            <form>
+                <button (click)="submit()" type="button" class="btn btn-primary contato-button yellow">Tenho interesse</button>
+            </form>
+        </footer>
+    </div>
+  </div>

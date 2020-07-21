@@ -1,0 +1,15 @@
+<div class="intro-bkg">
+    <section>
+        <div class="row">
+            <div class="blue-container" [ngClass]="{'col-sm-5' : isDesktopView()}">
+                <h1>A gente te ensina a pescar.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor.</p>
+            </div>
+        </div>
+        <div *ngIf="!isDesktopView()" class="row" style="position: relative;">
+            <figure class="img-container text-center">
+                <img src="../../../assets/img/treinamentos/time-trabalhando.png" alt="Quatro integrantes do time sentados à mesa, cada um com seu notebook e todos atentos a um monitor que exibe a tela de trabalho de um destes integrantes" class="img-time">
+            </figure>
+        </div>
+    </section>
+</div>

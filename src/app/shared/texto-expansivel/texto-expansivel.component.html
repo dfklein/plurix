@@ -1,0 +1,4 @@
+<span *ngIf="isQuote"><q>{{textoExibicao}}</q></span>
+<span *ngIf="!isQuote">{{textoExibicao}}</span>
+<a class="btn btn-link dark-background" role="button" (click)="toggleExpansao()" *ngIf="isLinkExpansivel() && !isTextoExpandido">{{expandirLinkTexto}}</a>
+<a class="btn btn-link dark-background" role="button" (click)="toggleExpansao()" *ngIf="isLinkExpansivel() && isTextoExpandido">{{retrairLinkTexto}}</a>

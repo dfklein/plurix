@@ -1,0 +1,32 @@
+ul:before{
+    content:attr(aria-label);
+    font-weight:bold;
+    color:#6D34EF;
+}
+ul {
+    margin-top:50px;
+    list-style-type:none;
+    padding-inline-start:0px;
+}
+ul:nth-of-type(2) {
+    margin-top:80px;
+}
+
+li {
+    margin:30px 0px;
+}
+button {
+    padding:0px;
+    color:#6D34EF;
+    text-decoration:underline;
+}
+@media(min-width:992px) {
+    .bkg {
+        background-image: url('../../../../assets/img/treinamentos/bkg-yellow-pattern.png');
+        background-repeat: no-repeat;
+        background-position: 70vw 180px;
+    }
+    .content-container {
+        padding: 45px 520px 50px 90px;
+    }
+}

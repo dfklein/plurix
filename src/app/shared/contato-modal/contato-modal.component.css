@@ -1,0 +1,41 @@
+button:active{
+    border: none;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: none;
+    opacity: inherit;
+}
+
+.modal-header {
+    background-color: #6D34EF !important;
+    border: none;
+    color: #F5F5F5
+}
+
+.modal-close {
+    background-color: #6D34EF !important;
+    border: none;
+    font-size: 30px; 
+    background-color: #6D34EF !important;
+    padding-right:50px;
+    padding-top:30px;
+}
+
+.close {
+    opacity: inherit !important;
+    color:#F5F5F5;
+}
+
+@media (max-width: 991px) {
+    .modal-close {
+        background-color: #CFED54 !important;
+        color: black;
+        padding:10px 16px;
+        margin-right: 0.1rem;
+        margin-top:0.1rem;
+        border-radius: 4px;
+        font-size: 1.25rem;
+    }
+}

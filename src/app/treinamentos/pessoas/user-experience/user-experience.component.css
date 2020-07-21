@@ -1,0 +1,23 @@
+@media(max-width:1199px) {
+    .bkg {
+        background-image: url('../../../../assets/img/common/bkg-yellow-pattern-xo.png');
+        background-repeat: no-repeat;
+        background-position: -29vw -16vw;
+        background-size:150%;
+        padding-top: 70px;
+    }
+}
+@media(min-width:1200px) {
+    .content-container {
+        padding:40px 85px;
+    }
+    .curso-container {
+        padding-right: 7vw;
+    }
+    .bkg {
+        background-image: url('../../../../assets/img/common/bkg-yellow-pattern-xo.png');
+        background-repeat: no-repeat;
+        background-position: -587px -3vw;
+        background-size:87%;
+    }
+}

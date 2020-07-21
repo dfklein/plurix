@@ -1,0 +1,24 @@
+<div class="container-fluid">
+    <section class="content-container">
+        <div class="row">
+            <div class="col-sm-6" [ngClass]="{'text-right':isDesktopView()}">
+                <h2>Tem um problema? Toca pro pai</h2>
+            </div>
+            <div class="col-sm-6">
+                <div class="row right-column-content">
+                    <div class="col-sm">
+                        <p>
+                            Pode ser lorem, pode ser ipsum, pode ser dolor, pode ser amet: traz qualquer problema que com a gente não tem tempo ruim.
+                        </p>
+                    </div>
+                </div>
+                <div class="row right-column-content">
+                    <div class="col-sm">
+                        <button type="button" class="btn btn-primary contato-button yellow" (click)="openContatoModal()">Preciso de vocês</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+</div>

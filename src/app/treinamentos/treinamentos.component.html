@@ -1,0 +1,20 @@
+
+<app-introducao-treinamentos></app-introducao-treinamentos>
+
+<div class="row link-row-style">
+    <div class="col text-center link-col-style">
+        <a routerLink="empresas" routerLinkActive="active" class="link-style">Empresas</a><br>
+    </div>
+    <div class="col text-center link-col-style">
+        <a routerLink="pessoas" routerLinkActive="active" class="link-style">Pessoas</a>
+    </div>
+</div>
+<router-outlet></router-outlet>
+<!--
+<div [@navBarAnimations]="o && o.activatedRouteData 
+      && o.activatedRouteData['animation']">
+    <router-outlet #o="outlet"></router-outlet>
+</div>
+-->
+
+

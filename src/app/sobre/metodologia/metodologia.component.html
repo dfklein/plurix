@@ -1,0 +1,55 @@
+<section>
+    <div class="container-fluid content-container">
+        <div class="relative-container">
+            <div class="row">
+                <h2>Sei lá, o jeito que a Plurix resolve meu problema é diferente.</h2>
+            </div>
+            <div class="row paragraph-and-images-container">
+                <div class="paragraph-column" [ngClass]="isDesktopView() ? 'col-sm-4' : 'col-sm'">
+                    <div class="row">
+                        <p>O método de projetar da Plurix mantém sempre em foco as premissas fundamentais para criar algo que seja útil, eficiente e desejável.</p>
+                    </div>
+                    <div class="row">
+                        <div [ngClass]="{'col text-center':!isDesktopView()}">
+                            <button type="button" class="btn btn-primary contato-button yellow" (click)="openContatoModal()">Preciso de vocês</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-8" *ngIf="isDesktopView()">
+                    <div class="row align-items-end">
+                        <div class="col-sm">
+                            <figure class="figure">
+                                <img src="../../../assets/img/sobre/sala-de-aula-1.png" alt="Sala de aula cheia com alunos sentados em suas mesas vendo um professor explicar matéria projetada em uma tela" style="width:100%">
+                            </figure>
+                        </div>
+                        <div class="col-sm">
+                            <figure class="figure">
+                                <img src="../../../assets/img/sobre/sala-de-aula-2.png" alt="Alunos assistindo a uma aula" style="width:100%">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row" *ngIf="!isDesktopView()" style="position: relative;">
+            <div class="col-sm align-items-end img-overlay-responsive text-center">
+                <figure class="figure">
+                    <img src="../../../assets/img/sobre/sala-de-aula-1.png" alt="Sala de aula cheia com alunos sentados em suas mesas vendo um professor explicar matéria projetada em uma tela" style="margin-right:5px; max-height:191px">
+                </figure>
+                <figure class="figure">
+                    <img src="../../../assets/img/sobre/sala-de-aula-2.png" alt="Alunos assistindo a uma aula" style="margin-left:5px; max-height:256px">
+                </figure>
+            </div>
+        </div>
+    </div>
+    <div class="metodos-component">
+        <app-metodos [isDesktopView]="isDesktopView()"
+            [metodos]="[
+                'Por meio de dinâmicas específicas para cada projeto, entendemos todo o cenário do segmento e a raiz dos problemas. Utilizamos métodos variados com público real para gerar insights preciosos para o projeto.',
+                'Após o entendimento dos problemas e necessidades do público, iniciamos o processo de cocriação, mesclando diferentes disciplinas e pontos de vista.',
+                'Prototipamos as melhores soluções e colocamos os conceitos à prova antes dos investimentos em desenvolvimento, assim ajustamos o projeto antes do lançamento, antecipando problemas que poderiam ter custos altos.',
+                'As soluções precisam estar em constante evolução, por isso ao final do projeto entregamos um plano de métricas simplificado para auxiliar no monitoramento e aprimoramento da plataforma.']">
+        </app-metodos>
+    </div>
+</section>
+

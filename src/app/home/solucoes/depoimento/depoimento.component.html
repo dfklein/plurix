@@ -1,0 +1,49 @@
+<article>
+    <div class="row">
+        <div class="col-lg-3">
+            <figure class="figure">
+                <img src="{{logoUri}}" class="logo-style" alt="{{logoAlt}}">
+            </figure>
+        </div>
+        <div class="col-lg-9">
+            <div class="content-group" *ngIf="depoimento != undefined && (isDesktopView() || isExibirSobre)">
+                <div class="row">
+                    <app-texto-expansivel 
+                        texto="{{depoimento}}" 
+                        [isQuote]="true"
+                        tamanho="180"
+                        expandirLinkTexto="Mostrar mais"
+                        retrairLinkTexto="Mostrar menos">
+                    </app-texto-expansivel>
+                </div>
+                <div class="row">
+                    <cite>
+                        {{autor}}, {{cargo}}
+                    </cite>
+                </div>
+            </div>
+            <div class="content-group">
+                <div class="row">
+                    <p>
+                        {{descricao}}
+                    </p>
+                </div>
+            </div>
+            <div class="content-group" *ngIf="!isDesktopView() && !isExibirSobre">
+                <div class="row">
+                    <a class="btn btn-link dark-background" role="button" (click)="toggleExibirSobre()">Sobre o projeto</a>
+                </div>
+            </div>
+            <div class="content-group" *ngIf="isDesktopView() || isExibirSobre">
+                <div class="row tags">
+                    <ul class="list-inline">
+                        <li *ngFor="let tag of tags" class="list-inline-item">
+                            {{tag}}
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+<hr class="generic-separator">

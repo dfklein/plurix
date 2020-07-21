@@ -1,0 +1,88 @@
+<div class="solucoes-general-style" id="projetos">
+    <div class="container-fluid">
+        <section>
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="title-container">
+                        <h2>Criamos soluções que funcionam e alguns memes de qualidade.</h2>
+                        <button type="button" class="btn btn-primary contato-button yellow" *ngIf="isDesktopView()" (click)="openContatoModal()">Preciso de vocês</button>
+                    </div>
+                </div>
+                <div class="col-lg-9">
+                    <div class="content-container">
+                        <app-depoimento 
+                            logoUri="../../assets/img/home/logo-extrato-digital.png" 
+                            logoAlt="Logotipo da empresa Extrato Digital"
+                            depoimento="A Plurix ajudou bastante, são muito profissionais e trabalharam muito bem com a Amanda."
+                            autor="Leando Casella"
+                            cargo="Exater"
+                            descricao="Projeto top em que lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac eleifend lorem, non pharetra enim. Donec bibendum tortor aliquam hendrerit finibus."
+                            [tags]="['PESQUISAS DE INSIGHTS', 'WORKSHOPS', 'BRANDING', 'DESIGN DE INTERFACE']">
+                        </app-depoimento>
+                        <app-depoimento 
+                            logoUri="../../assets/img/home/logo-beleaf.png" 
+                            logoAlt="Logotipo da empresa Beleaf"
+                            depoimento="Eles entraram de cabeça não só no nosso modelo de negócio, mas principalmente nas dores dos nossos clientes - e o resultado foi uma interface criada 100% para a nossa realidade. Além disso, todo o andamento do projeto foi muito tranquilo. De alguma forma, eles encontraram o equilíbrio perfeito entre cumprimento de prazos e qualidade de entrega, mesmo com um escopo super apertado. Por fim, o atendimento é impecável, deixando tudo muito bem explicado, com uma velocidade e atenção que não se vê por aí. Não poderia recomendar mais."
+                            autor="Jônatas Mesquita"
+                            cargo="Beleafer"
+                            descricao="Projeto top em que lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac eleifend lorem, non pharetra enim. Donec bibendum tortor aliquam hendrerit finibus."
+                            [tags]="['PESQUISAS DE INSIGHTS', 'DESIGN DE INTERFACE', 'TESTE DE GUERRILHA']">
+                        </app-depoimento>
+                        <app-depoimento 
+                            logoUri="../../assets/img/home/logo-marisa.png" 
+                            logoAlt="Logotipo da empresa Marisa"
+                            descricao="Projeto top em que lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac eleifend lorem, non pharetra enim. Donec bibendum tortor aliquam hendrerit finibus."
+                            [tags]="['PESQUISAS DE INSIGHTS', 'DESIGN DE INTERFACE', 'TESTE DE GUERRILHA']">
+                        </app-depoimento>
+                        <app-depoimento 
+                            logoUri="../../assets/img/home/logo-credsystem.png" 
+                            logoAlt="Logotipo da empresa CredSystem"
+                            depoimento="O mergulho profundo que vocês dão para entender o problema, o estimulo ao exercício constante de dar voz e empoderar o cliente, deixando de lado gostos e predileções, privilegiando a -> NÃO TENHO A ÍNTEGRA DESTE TEXTO!!!"
+                            autor="Rafael Aparicio"
+                            cargo="Cred-Syster"
+                            descricao="Projeto top em que lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ac eleifend lorem, non pharetra enim. Donec bibendum tortor aliquam hendrerit finibus."
+                            [tags]="['PESQUISAS DE INSIGHTS', 'WORKSHOPS', 'JORNADAS & PROTOTIPOS', 'TESTES DE GUERRILHA', 'DESIGN DE INTERFACE']">
+                        </app-depoimento>
+                    </div>
+                    <div [ngClass]="{'content-container':isDesktopView()}" class="outros-clientes-container">
+                        <div class="row">
+                            <div class="col-lg-12 text-center" [ngClass]="{'text-center':!isDesktopView()}">
+                                <h3>Outros clientes que já bancaram nosso salário:</h3>
+                            </div>
+                        </div>
+                        <div class="row row-logos">
+                            <div class="col-sm d-flex align-items-center justify-content-center" [ngClass]="{'text-center':!isDesktopView()}">
+                                <figure class="figure"><img src="../../assets/img/home/logo-ci.png" alt="Logotipo do cliente CI" class="logo-outros-clientes"></figure>
+                            </div>
+                            <div class="col-sm d-flex align-items-center justify-content-center" [ngClass]="{'text-center':!isDesktopView()}">
+                                <figure class="figure"><img src="../../assets/img/home/logo-carrefour.png" alt="Logotipo do cliente Carrefour" class="logo-outros-clientes"></figure>
+                            </div>
+                            <div class="col-sm d-flex align-items-center justify-content-center" [ngClass]="{'text-center':!isDesktopView()}">
+                                <figure class="figure"><img src="../../assets/img/home/logo-nivea.png" alt="Logotipo do cliente Nivea" class="logo-outros-clientes"></figure>
+                            </div>
+                            <div class="col-sm d-flex align-items-center justify-content-center" [ngClass]="{'text-center':!isDesktopView()}">
+                                <figure class="figure"><img src="../../assets/img/home/logo-alana.png" alt="Logotipo do cliente Alana" class="logo-outros-clientes"></figure>
+                            </div>
+                        </div>
+                        <div class="row row-logos">
+                            <div class="col-sm d-flex align-items-center justify-content-center" [ngClass]="{'text-center':!isDesktopView()}">
+                                <figure class="figure"><img src="../../assets/img/home/logo-tivit.png" alt="Logotipo do cliente Tivit" class="logo-outros-clientes"></figure>
+                            </div>
+                            <div class="col-sm d-flex align-items-center justify-content-center" [ngClass]="{'text-center':!isDesktopView()}">
+                                <figure class="figure"><img src="../../assets/img/home/logo-alper.png" alt="Logotipo do cliente Alper" class="logo-outros-clientes"></figure>
+                            </div>
+                            <div class="col-sm d-flex align-items-center justify-content-center" [ngClass]="{'text-center':!isDesktopView()}">
+                                <figure class="figure"><img src="../../assets/img/home/logo-almapbbdo.png" alt="Logotipo do cliente Almap BBDO" class="logo-outros-clientes"></figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" *ngIf="!isDesktopView()">
+                <div class="col-lg text-center">
+                    <button type="button" class="btn btn-primary contato-button yellow button-mobile-margin" (click)="openContatoModal()">Preciso de vocês</button>
+                </div>
+            </div>
+        </section>
+    </div>
+</div>

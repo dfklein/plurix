@@ -1,0 +1,40 @@
+h3 {
+  font-size: 1.0rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+p {
+  font-size: 0.75rem;
+  margin: initial;
+}
+
+.principal-row {
+  height: 100%;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 150px;
+  padding: 1rem 1.5rem;
+  background-color: #481DAC;
+  color: #F5F5F5;
+}
+
+.logo-modal{
+  height: 6rem;
+}
+
+@media (max-width: 574px) {
+  .logo-modal {
+      margin-right: 2rem;
+      margin-top: 1.5rem;
+      float:left !important;
+  }
+  .footer {
+    height: 450px;
+  }
+  p {
+    margin-bottom: 1.75rem;
+  }
+}

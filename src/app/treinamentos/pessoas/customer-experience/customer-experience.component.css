@@ -1,0 +1,17 @@
+@media(max-width:1199px) {
+    .bkg-mobile {
+        background-image: url('../../../../assets/img/common/bkg-blue-pattern.png');
+        background-repeat: no-repeat;
+        background-position: -4vw -136vw;
+        background-size:150%;
+        padding-top: 70px;
+    }
+}
+@media(min-width:1200px) {
+    .content-container {
+        padding:40px 85px;
+    }
+    .curso-container {
+        padding-right: 80px;
+    }
+}

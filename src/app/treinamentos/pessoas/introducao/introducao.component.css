@@ -1,0 +1,9 @@
+@media(min-width:992px) {
+    .container-fluid {
+        padding:5px 330px;
+    }
+
+}
+.row {
+    margin:30px 0px;
+}

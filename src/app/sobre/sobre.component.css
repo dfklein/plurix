@@ -1,0 +1,8 @@
+@media (min-width: 992px) {
+    .background-img {
+        background-image: url('../../assets/img/common/bkg-elipse-small.png'), url('../../assets/img/common/bkg-blue-pattern.png'), url('../../assets/img/common/bkg-yellow-pattern.png');
+        background-position: 91vw 7rem, -40rem -20rem, 89vw 20rem;
+        background-repeat: no-repeat;
+        background-size: 170px, auto, auto;
+    }
+}

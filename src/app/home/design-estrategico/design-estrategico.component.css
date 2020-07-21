@@ -1,0 +1,39 @@
+.team-img-style-desktop {
+    margin-top:3rem;
+    margin-left:5rem;
+}
+.team-img-style-mobile {
+    width: 100%;
+}
+
+@media (max-width: 1154px) {
+    .team-img-container {
+        background-image: url('../../../assets/img/common/bkg-blue-pattern.png');
+        background-position: bottom;
+        padding:40px 0px;
+        width:100%;
+    }
+    
+
+}
+
+@media (min-width: 1155px) {
+    .container-fluid {
+        background-image: url('../../../assets/img/common/bkg-blue-pattern.png'), url('../../../assets/img/common/bkg-elipse-small.png'), url('../../../assets/img/home/bkg-elipse-big.png');
+        background-position: 65vw, 40vw -3.8rem, -15vw 27rem;
+        background-repeat: no-repeat;
+        background-size: auto, 110px, 400px;
+    }
+
+    section {
+        padding: 5rem 3rem 2rem 8rem;
+    }
+
+    h1 {
+        margin-bottom: 4rem;
+    }
+    .content-container {
+        padding:20px;
+    }
+    
+}

@@ -1,0 +1,79 @@
+h2 { 
+    font-weight: 700; 
+    font-size: 1.2rem;
+    line-height: inherit;
+}
+
+.gray-container {
+    background-color: #F5F5F5;
+    padding:150px 100px 50px 100px;
+    margin:0px 150px 50px 75px;
+}
+
+.equipe-img {
+    width: 100%;
+}
+
+@media (max-width: 991px) {
+    .img-container {
+        background-image: url('../../../assets/img/common/bkg-blue-pattern.png');
+        background-position: bottom;
+        padding:40px 0px;
+    }
+    .manifesto-article {
+        padding:30px 0px;
+    }
+    .gray-container {
+        margin:0px 0px 0px 75px;
+        padding:0px;
+        
+    }
+    h2 {
+        margin-top:15px;
+        padding:15px 0px;
+    }
+    p {
+        padding:15px 0px;
+    }
+}
+
+@media (min-width: 991px) {
+    h1 {
+        margin-left:150px;
+        margin-right:220px;
+    }
+    .container-fluid { padding:100px 0px; }
+    .relative-container { position: relative; }
+    .manifesto-article {
+        margin-right:170px;
+        padding-top: 60px;
+        padding-bottom:0px;
+    }
+    .img-container {
+        position: absolute;
+        left: 0px;
+    }
+}
+@media (min-width: 992px) and (max-width: 1270px) {
+    .manifesto-article {
+        margin-left: 30px;
+        margin-bottom:0px;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1129px) {
+    .img-container { top: 35%; }
+}
+
+@media (min-width: 1130px) and (max-width: 1270px) {
+    .img-position { top: 35%; }
+    .img-container { top: 45%; }
+}
+@media (min-width: 1271px) {
+    .manifesto-article {
+        margin-left: 0px;
+        margin-bottom:20px;
+    }
+    .img-position { top: 50%; }
+    .img-container { top: 45%; }
+}

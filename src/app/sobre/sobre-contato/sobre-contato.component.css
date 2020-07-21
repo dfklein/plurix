@@ -1,0 +1,33 @@
+h2 {
+    font-size: 20px;
+    margin-bottom:40px;
+}
+
+.content-container {
+    padding: 15px 50px 15px 70px;
+}
+.content-container > .row {
+    margin-left:0px;
+    margin-right:0px;
+}
+
+.gray-container {
+    background-color: #F5F5F5;
+}
+.blue-container {
+    background-color: #6D34EF;
+    color: white;
+}
+
+.top {
+    padding-top: 30px;
+}
+
+@media(max-width: 574px) {
+    .content-container {
+        padding: 40px 15px;
+    }
+    p {
+        margin-bottom:40px;
+    }
+}

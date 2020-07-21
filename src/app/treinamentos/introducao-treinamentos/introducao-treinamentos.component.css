@@ -1,0 +1,37 @@
+h1 {
+    margin-bottom: 40px;
+}
+
+.blue-container {
+    color:white;
+    background-color: #6D34EF;
+    padding: 50px 30px;
+    margin: 100px 150px;
+}
+.img-container {
+    position: absolute;
+    top:-170px;
+    width:100%;
+}
+.img-time {
+    width:85%;
+    max-height:200px;
+    max-width:380px;
+}
+@media (min-width: 992px) { 
+    .intro-bkg {
+        background-image: url('../../../assets/img/treinamentos/time-trabalhando.png'), url('../../../assets/img/treinamentos/bkg-intro-pattern.png');
+        background-position: 47vw 50px, 0vw 0vw;
+        background-size: 650px, 100%;
+        background-repeat: no-repeat;
+        padding:20px 0px;
+    }
+}
+
+@media (max-width: 991px) {
+    .blue-container { 
+        padding:40px 30px;
+        margin:0px;
+        margin-bottom: 150px;
+    }
+}

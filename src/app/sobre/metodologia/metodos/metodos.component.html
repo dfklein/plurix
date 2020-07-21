@@ -1,0 +1,16 @@
+<ol class="row" *ngIf="isDesktopView">
+    <li class="col-lg col-sm-6" *ngFor="let metodo of metodos">
+        {{metodo}}
+    </li>
+</ol>
+
+<div *ngIf="!isDesktopView" class="metodos-carousel">
+    <ngb-carousel>
+        <ng-template ngbSlide *ngFor="let metodo of metodos; let i = index">
+            <div class="picsum-img-wrapper">
+                <span class="index-style">0{{i+1}}</span>
+                <span>{{metodo}}</span>
+            </div>
+        </ng-template>
+    </ngb-carousel>
+</div>

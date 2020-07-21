@@ -1,0 +1,40 @@
+<div class="bkg container-fluid">
+    <section class="content-container">
+        <div class="row">
+            <div class="col">
+                <p>São mais de 10 módulos livres para que times corporativos moldem a trilha de treinamento ideal para se destacar, <strong>abraçar os princípios e dominar as práticas do design centrado no ser humano:</strong></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm">
+                <ul aria-label="Negócio:">
+                    <li>Pós-consumo e contexto mundial</li>
+                    <li>Propósito nos negócios</li>
+                    <li>Negócios colaborativos</li>
+                    <li *ngIf="!isDesktopView() && !isShowMore"><button type="button" class="btn btn-link" (click)="toggleShowMore()">Mostrar mais</button></li>
+                    <div *ngIf="isDesktopView() || (!isDesktopView() && isShowMore)">
+                        <li>Employee experience</li>
+                        <li>Cultura & comunicação corporativa</li>
+                        <li>Empreendedorismo & intraempreendedorismo</li>
+                        <li>Reestruturação de processos</li>
+                        <li>Gestão de crise</li>
+                        <li>Liderança dinâmica</li>
+                    </div>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <ul aria-label="Design:">
+                    <li>Design Thinking (módulos I e II)</li>
+                    <li>Design de Serviços</li>
+                    <li>UX no dia-a-dia corporativo</li>
+                    <li>Design Sprint</li>
+                </ul>
+                <ul aria-label="Inovação:">
+                    <li>Facilitação de processos cocriativos</li>
+                    <li>Estúdio para co-criação</li>
+                    <li>Inovação social no dia-a-dia</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>

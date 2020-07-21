@@ -1,0 +1,10 @@
+
+<ng-template #contatoModal let-modal>
+  <div class="modal-header">
+    <!--<h4 class="modal-title" id="modal-basic-title"></h4>-->
+    <button type="button" class="close modal-close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+      <fa-icon [icon]="faTimes"></fa-icon>
+    </button>
+  </div>
+  <app-contato-modal-body></app-contato-modal-body>
+</ng-template>

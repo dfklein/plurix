@@ -1,0 +1,50 @@
+
+.gray-container {
+    background-color: #F5F5F5;
+}
+.gray-container > q {
+    display:block;
+}
+.separador-citacao {
+    margin: 2rem 0rem;
+    border-top-width:3px;
+    border-color:#CFED54;
+    width:130px;
+}
+.definicoes-treinamento {
+    display: flex;
+}
+.row:not(:first-of-type) {
+    margin-top:50px;
+}
+.logo-tivit > img {
+    margin-bottom:20px;
+}
+@media(min-width:992px) {
+    section {
+        padding:100px;
+        padding-bottom:50px;
+    }
+    .gray-container {
+        padding:100px;
+    }
+    
+}
+
+@media(max-width:991px) {
+    .gray-container {
+        margin:50px 15px 0px 15px;
+        padding:30px 10px 50px 10px;
+        position: relative;
+    }
+    
+    .icon-aspas {
+        position:relative;
+    }
+    .icon-aspas > img {
+        position:absolute;
+        width:45px;
+        top:-50px;
+        left:38vw;
+    }
+}

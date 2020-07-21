@@ -1,0 +1,67 @@
+.solucoes-general-style {
+    background-image: linear-gradient(#A599FF, #6D34EF);
+    color: white;
+}
+
+h3 {
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.title-container {
+    padding:2rem 0rem;
+}
+
+.content-container {
+    padding-left:4rem;
+}
+
+.logo-outros-clientes {
+    max-height: 60px;
+}
+
+.button-mobile-margin {
+    margin-top:60px;
+}
+
+@media (max-width: 991px) {
+    section {
+        padding: 3rem 0rem;
+    }
+
+    .logo-outros-clientes {
+        margin: 10px 0px;
+    }
+
+    .col-sm {
+        margin: 15px 0px;
+    }
+}
+@media (min-width: 992px) {
+
+    .title-container {
+        padding:4rem 0rem;
+    }
+    
+    section {
+        padding: 3rem;
+    }
+
+    .content-container {
+        padding:0rem 4rem;
+    }
+
+    .contato-button {
+        margin:3rem 3rem 0rem 0rem;
+    }
+    
+    .row-logos {
+        margin: 30px 0px;
+    }
+
+    .outros-clientes-container {
+        padding: 40px 0px !important;
+    }
+    
+}

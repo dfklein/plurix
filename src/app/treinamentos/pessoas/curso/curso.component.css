@@ -1,0 +1,35 @@
+h3 {
+    font-size: 36px;
+    font-weight: 700;
+}
+.text-row {
+    margin: 15px 0px;
+}
+.contato-button {
+    padding: 5px 70px;
+}
+.table td, table th {
+    text-align: center;
+    border-top: none;
+    border-bottom:none;
+}
+th {
+    font-weight: normal;
+}
+td {
+    font-weight: 700;
+}
+.table {
+    background-color: #F5F5F5;
+}
+
+.col {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+@media (max-width: 577px) {
+    .contato-button {
+        margin:auto;
+    }
+}

@@ -1,0 +1,39 @@
+<div class="container-fluid">
+    <section class="motivos-section">
+        <app-motivos-imagens-desktop 
+            *ngIf="isDesktopView(991)"
+            [images]="images">
+        </app-motivos-imagens-desktop>
+        <app-motivos-imagens-mobile
+            *ngIf="!isDesktopView(991)"
+            [images]="images">
+        </app-motivos-imagens-mobile>
+        <div class="row">
+            <aside class="col-sm text-center link-externo">
+                <a class="btn btn-link light-background" role="button" href="https://youtu.be/2Z4m4lnjxkY" target="_blank">Olha mais coisa aqui</a>
+            </aside>
+        </div>
+    </section>
+    <section class="treinamento-link-section">
+        <div class="row">
+            <div class="treinamento-link-section-text-container" [ngClass]="isDesktopView(1060) ? 'col-lg-6' : 'col-lg'" >
+                <div class="row">
+                    <div class="col-lg">
+                        <h2>A gente até te ensina procê parar de passar vergonha.</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg">
+                        <a class="btn btn-link dark-background" role="button" routerLink="/treinamentos">Me explica isso aí</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <img src="../../../assets/img/home/bkg-home-treinamentos.png" class="treinamentos-img" *ngIf="!isDesktopView(1060)">
+    </section>
+</div>
